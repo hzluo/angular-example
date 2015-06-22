@@ -7,7 +7,15 @@
 </head>
 <body ng-app="my" ng-controller="RootController">
 <h1>Exchange Rate</h1>
-<h2>{{title}}</h2>
+
+<ul>
+    <li>
+        CNY: <input ng-model="valueCNY" type="input"/>
+    </li>
+    <li>
+       Input: {{valueCNY}}
+    </li>
+</ul>
 </body>
 <script type="application/javascript" src="main.js"></script>
 </html>
