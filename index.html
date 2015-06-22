@@ -10,10 +10,13 @@
 
 <ul>
     <li>
-        CNY: <input ng-model="valueCNY" type="input"/>
+        CNY: <input ng-model="valueCNY" type="input" ng-change="inputChanged()"/>
     </li>
     <li>
        Input: {{valueCNY}}
+    </li>
+    <li>
+        USD: {{valueUSD}}
     </li>
 </ul>
 </body>
