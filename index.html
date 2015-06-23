@@ -3,6 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Exchange Rate</title>
+    <style type="text/css">
+        .ng-invalid {
+            border-color: red;
+        }
+    </style>
+
     <script type="application/javascript" src="lib/angular.js"></script>
 </head>
 <body ng-app="my" ng-controller="RootController">
@@ -10,7 +16,7 @@
 
 <ul>
     <li>
-        CNY: <input ng-model="valueCNY" type="input" ng-change="inputChanged()"/>
+        CNY: <input ng-model="valueCNY" type="input" ng-change="inputChanged()" number=""/>
     </li>
     <li>
        Input: {{valueCNY | toMoney}}
